@@ -1,76 +1,72 @@
-<!DOCTYPE <html>
-<hmtl>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="This is my personal website!">
+    <meta name="author" content="Minghao Shan">
+    <!-- Icons needs to be addedddddddddddddddddddddddddddddddddddddddddddddddd -->
+    <link rel="icon" href="../../favicon.ico">
 
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script language="javascript">
-            function openCity(evt, cityName) {
-                // Declare all variables
-                var i, tabcontent, tablinks;
+    <title>Minghao's Personal Websitep</title>
 
-                // Get all elements with class="tabcontent" and hide them
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-                // Get all elements with class="tablinks" and remove the class "active"
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-                // Show the current tab, and add an "active" class to the button that opened the tab
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-        </script>
-    </head>
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
 
-    <body>
+  <body>
 
-        <h1> Welcome! </h1>
-        <h2> This is Minghao Shan's personal website</h2>
-        <div class = "awesomePic">
-                <IMG class="displayed" width="400" src="roy_mustang.png">
-        </div>
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Info')">Info & Resume</button>
-            <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-            <button class="tablinks" onclick="openCity(event, 'Drawing')">Drawing</button>
-            <button class="tablinks" onclick="openCity(event, 'HailuWeb')">Hailu's Website</button>
-        </div>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="resume.html">Resume</a></li>
+            <li role="presentation"><a href="project.html">Projects</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Minghao Shan</h3>
+      </div>
 
+      <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p class="lead"><h4>This is my personal website.</h4></p>
+      </div>
 
-
-        <div id="Info" class="tabcontent">
-            <h3>My Information</h3>
-            <p>I am Minghao Shan and welcome! This website is created by myself and I am still building it!</p>
-            <p>My <a href="resume.html">resume</a> is here!</p>
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
         </div>
 
-        <div id="Projects" class="tabcontent">
-            <h3>Interesting projects</h3>
-            <p>The following <a href="project.html">projects</a> are what I find interesting and am willing to share about what
-                I found!</p>
-
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
         </div>
+      </div>
 
-        <div id="Drawing" class="tabcontent">
-            <h3>My drawings</h3>
-            <p>The drawings are the easiest to display. </p>
-            <img class="displayed" width="300" src="image_wolf.jpg">
-            <img class="displayed" width="300" src="image_woman.jpg">
-        </div>
+      <footer class="footer">
+        <p>&copy; Follow My Dream, Inc.</p>
+      </footer>
 
-        <div id="HailuWeb", class="tabcontent">
-            <a href="https://hailulai.github.io/">Best Buddy Hailu's personal website</a>
-        </div>
+    </div> <!-- /container -->
 
-    </body>
-    <audio autoplay loop>
-        <!-- <source src="I Am The One.mp3" </audio> -->
-        <source src="WOWS.mp3" 
-    </audio>
 
-        </html>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
