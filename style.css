@@ -8,16 +8,17 @@ body{
     color: white;
     height: 90vh;
     width: 100%;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
     font-weight: lighter;
     padding-top: 10vh;
     overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 img{
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
     display: inline;
 }
 .blinky{
@@ -28,10 +29,12 @@ img{
     display: inline-block;
     margin: 0 auto;
     font-size: 0.5em;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 3%;
     padding: 0.5em;
+    box-shadow: 0 0 2px 2px rgb(202, 202, 202);
+    user-select: none;
 }
 
 .button:hover{
