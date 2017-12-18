@@ -1,96 +1,213 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<htm>
+<html>
 
-  <head>
-    <title>Minghao Shan</title>
-    <link rel="icon" href="img/icon.png">
-  </head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script>
-    var isOn;
-    function printText(string) {
+<head>
+	<title>Minghao's personal website</title>
+	<!-- custom-theme -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Minghao Shan's Responsive Personal Website" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //custom-theme -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<!-- <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"> -->
+</head>
 
-    }
-    function nextPage(next) {
-      let nextPage;
-      if (next == 2) {
-        nextPage = $("#experience");
-      } else if (next == 3) {
-        nextPage = $("#education");
-      } else if (next == 4) {
-        nextPage = $("#award");
-      }
-      nextPage.animate({ left: '0' }, 400);
-    }
-    function blinkCursor() {
-      var elements = document.getElementsByClassName("blinky");
-      let i;
-      if (isOn) {
-        isOn = false;
-      }
-      else {
-        isOn = true;
-      }
-      for (i = 0; i < elements.length; i++) {
-        if (isOn) {
-          elements[i].style.color = "white";
-        }
-        else {
-          elements[i].style.color = "transparent";
-        }
-      }
-    }
-    window.onload = function () {
-      isOn = true;
-      const page1 = document.getElementById('intro');
-      console.log("1");
-      setInterval(blinkCursor, 500);
-    }
-  </script>
+<body>
+	<div class="main">
+		<h1>Personal Website</h1>
+		<div class="agile_main_grids">
+			<div class="agile_main_grid_left">
+				<div class="agileits_personal_card_grid">
+					<div class="wthree_personal_card_gridl">
+						<img src="images/1.png" alt="My picture" />
+					</div>
+					<div class="wthree_personal_card_gridr">
+						<h2>Minghao Shan</h2>
+						<p>MEAN Full Stack Developer</p>
+					</div>
+					<div class="clear"> </div>
+					<div class="agileinfo_personal_text">
+						<p>I am a Junior Computer Science from Truman State University.</p>
+						<p>I am currently learning Python, JavaScript and Mongo DB outside of class via side projects.</p>
+					</div>
+					<div class="agileits_plans">
+						<h3>Truman State University</h3>
+						<ul>
+							<li>2015 Fall - 2019 Spring</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="agileits_w3layouts_main_grid_right">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="w3ls_main_grid_right_grid">
+									<div class="w3l_net_worth">
+										<h4>Skills</h4>
+										<!-- <p>$ 5,324</p> -->
+									</div>
+									<div class="main_grid_right_grid">
+										<div class="w3layouts_main_grid_right_grid">
+											<div class="main_grid_right_gridl">
+												<h4>Recent</h4>
+											</div>
+											<div class="clear"> </div>
+										</div>
+										<ul>
+											<li class="agile_color">Python
+												<i>Django</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color1">JavaScript
+												<i>Angular, Node Js, Express.JS</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color2">Java
+												<i>Basic Android</i>
+											</li>
+											<li>
+												<span class="link_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color3">Mongo DB
+												<i></i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="w3ls_main_grid_right_grid">
+									<div class="w3l_net_worth">
+										<h4>Personal Projects</h4>
+										<!-- <p>$ 7,324</p> -->
+									</div>
+									<div class="main_grid_right_grid">
+										<div class="w3layouts_main_grid_right_grid">
+											<div class="main_grid_right_gridl">
+												<h4>Recent</h4>
+											</div>
+											<div class="clear"> </div>
+										</div>
+										<ul>
+											<li class="agile_color">Angular Project
+												<i>December 2017 - Present</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color1">Financial Tracker
+												<i>November 2017 - Present</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color2">Open source project @ Zulip
+												<i>December 2017 - Present</i>
+											</li>
+											<li>
+												<span class="agile_color1"></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="w3ls_main_grid_right_grid">
+									<div class="w3l_net_worth">
+										<h4>Work Experience</h4>
+										<!-- <p>$ 21,324</p> -->
+									</div>
+									<div class="main_grid_right_grid">
+										<div class="w3layouts_main_grid_right_grid">
+											<div class="main_grid_right_gridl">
+												<h4>Recent</h4>
+											</div>
+											<div class="clear"> </div>
+										</div>
+										<ul>
+											<li class="agile_color">Java tutor
+												<i>2018 January - Present</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color1">Building Technology Support
+												<i>2016 March - 2017 August</i>
+											</li>
+											<li>
+												<span class="agile_color"></span>
+											</li>
+										</ul>
+										<ul>
+											<li class="agile_color2">Shaviation Technology
+												<i>2015 Fall - 2019 Spring</i>
+											</li>
+											<li>
+												<span class="agile_color1"></span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		<div class="agileits_copyright">
+			<p>© 2017 Personal Card Widget. All rights reserved | Design by
+				<a href="http://w3layouts.com/">W3layouts</a>
+			</p>
+		</div>
+	</div>
+	<!-- flexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- //flexSlider -->
 
-  <body>
-    <div id="intro">
-      <img src="img/welcome.png">
-      <br> Hey,
-      <div style="font-weight: 400; ">
-        > I'm Minghao Shan
-        <div class="blinky">_</div>
-        <br>
-        <div class="button" onclick="javascript: nextPage(2);">
-          What do I do? >>
-        </div>
-      </div>
-    </div>
-    <div id="experience">
-      <div style="font-weight: 400; ">
-        > Experience
-        <div class="blinky">_</div>
-        <br>
-        <div class="button" onclick="javascript: nextPage(3);">
-          Education >>
-        </div>
-      </div>
-    </div>
-    <div id="education">
-      <div style="font-weight: 400; ">
-        > Education
-        <div class="blinky">_</div>
-        <br>
-        <div class="button" onclick="javascript: nextPage(4);">
-          Award >>
-        </div>
-      </div>
-    </div>
-    <div id="award">
-      <div style="font-weight: 400; ">
-        > Award
-        <div class="blinky">_</div>
-        <br>
-      </div>
-    </div>
-  </body>
+</body>
 
-  </html>
+</html>
