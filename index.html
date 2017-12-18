@@ -3,23 +3,37 @@
   <head><title>Minghao Shan</title></head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <script>
-    let theyAreOn;
+    var isOn;
     function printText(string){
 
     }
-    function blinkAll(){
+    function nextPage(next){
+      let nextPage;
+      if (next == 2){
+        nextPage = $("#experience");
+      } else if (next == 3){
+        nextPage = $("#education");
+      } else if (next == 4){
+        nextPage = $("#award");
+      } 
+      nextPage.animate({left: '0'}, 400);
+    }
+    function blinkCursor(){
       var elements = document.getElementsByClassName("blinky");
       let i;
-      if (theyAreOn){
-        theyAreOn = false;
+      if (isOn){
+        isOn = false;
       }
       else{
-        theyAreOn = true;
+        isOn = true;
       }
       for(i = 0; i < elements.length; i++){
-        console.log(elements);
-        if(theyAreOn){
+        if(isOn){
           elements[i].style.color = "white";
         }
         else{
@@ -28,21 +42,45 @@
       }
     }
     window.onload = function(){
-      theyAreOn = true;
-      const page1 = document.getElementById('page1');
+      isOn = true;
+      const page1 = document.getElementById('intro');
       console.log("1");
-      setInterval(blinkAll, 500);
+      setInterval(blinkCursor, 500);
     }
   </script>
   <body>
-    <div id="page1">
+    <div id="intro">
       <img src="image/welcome.png"><br>
-      Hello
+      Hey,
       <div style="font-weight: 400; ">
         > I'm Minghao Shan<div class="blinky">_</div><br>
-        <div class="button">
+        <div class="button" onclick="javascript: nextPage(2);">
           What do I do? >>
         </div>
+      </div>
+    </div>
+    <div id="experience">
+      Experience
+      <div style="font-weight: 400; ">
+        > Experience<div class="blinky">_</div><br>
+        <div class="button" onclick="javascript: nextPage(3);">
+          What do I do? >>
+        </div>
+      </div>
+    </div>
+    <div id="education">
+      Education
+      <div style="font-weight: 400; ">
+        > Education<div class="blinky">_</div><br>
+        <div class="button" onclick="javascript: nextPage(4);">
+          What do I do? >>
+        </div>
+      </div>
+    </div>
+    <div id="award">
+      Award
+      <div style="font-weight: 400; ">
+        > Award<div class="blinky">_</div><br>
       </div>
     </div>
   </body>

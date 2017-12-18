@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-#page1{
+#intro{
     background-color: rgb(90, 173, 228);
     color: white;
     height: 90vh;
@@ -14,7 +14,60 @@ body{
     padding-top: 10vh;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
+
+#experience{
+    background-color: rgb(90, 173, 228);
+    color: white;
+    height: 90vh;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 100%;
+    z-index: 11;
+}
+
+#education{
+    background-color: rgb(90, 173, 228);
+    color: white;
+    height: 90vh;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 100%;
+    z-index: 11;
+}
+
+#award{
+    background-color: rgb(90, 173, 228);
+    color: white;
+    height: 90vh;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 10vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 100%;
+    z-index: 11;
+}
+
 img{
     border-radius: 50%;
     height: 4em;
