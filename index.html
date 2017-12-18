@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <htm>
-  <head><title>Minghao Shan</title></head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <head>
+    <title>Minghao Shan</title>
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   <script>
     var isOn;
-    function printText(string){
+    function printText(string) {
 
     }
-    function nextPage(next){
+    function nextPage(next) {
       let nextPage;
-      if (next == 2){
+      if (next == 2) {
         nextPage = $("#experience");
-      } else if (next == 3){
+      } else if (next == 3) {
         nextPage = $("#education");
-      } else if (next == 4){
+      } else if (next == 4) {
         nextPage = $("#award");
-      } 
-      nextPage.animate({left: '0'}, 400);
+      }
+      nextPage.animate({ left: '0' }, 400);
     }
-    function blinkCursor(){
+    function blinkCursor() {
       var elements = document.getElementsByClassName("blinky");
       let i;
-      if (isOn){
+      if (isOn) {
         isOn = false;
       }
-      else{
+      else {
         isOn = true;
       }
-      for(i = 0; i < elements.length; i++){
-        if(isOn){
+      for (i = 0; i < elements.length; i++) {
+        if (isOn) {
           elements[i].style.color = "white";
         }
-        else{
+        else {
           elements[i].style.color = "transparent";
         }
       }
     }
-    window.onload = function(){
+    window.onload = function () {
       isOn = true;
       const page1 = document.getElementById('intro');
       console.log("1");
       setInterval(blinkCursor, 500);
     }
   </script>
+
   <body>
     <div id="intro">
-      <img src="image/welcome.png"><br>
-      Hey,
+      <img src="img/welcome.png">
+      <br> Hey,
       <div style="font-weight: 400; ">
-        > I'm Minghao Shan<div class="blinky">_</div><br>
+        > I'm Minghao Shan
+        <div class="blinky">_</div>
+        <br>
         <div class="button" onclick="javascript: nextPage(2);">
           What do I do? >>
         </div>
       </div>
     </div>
     <div id="experience">
-      Experience
       <div style="font-weight: 400; ">
-        > Experience<div class="blinky">_</div><br>
+        > Experience
+        <div class="blinky">_</div>
+        <br>
         <div class="button" onclick="javascript: nextPage(3);">
-          What do I do? >>
+          Education >>
         </div>
       </div>
     </div>
     <div id="education">
-      Education
       <div style="font-weight: 400; ">
-        > Education<div class="blinky">_</div><br>
+        > Education
+        <div class="blinky">_</div>
+        <br>
         <div class="button" onclick="javascript: nextPage(4);">
-          What do I do? >>
+          Award >>
         </div>
       </div>
     </div>
     <div id="award">
-      Award
       <div style="font-weight: 400; ">
-        > Award<div class="blinky">_</div><br>
+        > Award
+        <div class="blinky">_</div>
+        <br>
       </div>
     </div>
   </body>
-</html>
+
+  </html>
