@@ -638,6 +638,12 @@ a {
     .w3-col.m12 {
         width: 99.99999%
     }
+    .w3-left {
+        width: 25.99999%
+    }
+    .w3-right {
+        width: 72.99999%
+    }
 }
 
 @media (min-width:993px) {
