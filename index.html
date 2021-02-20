@@ -1,183 +1,87 @@
 <!DOCTYPE html>
 <html>
-<title>Minghao Shan's Website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link rel="shortcut icon" href="icon.png" type="image/x-icon" />
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    a,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif;
-    }
-    span{
-        padding:5px;
+  <head>
+    <title>Minghao's Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  </head>
+  <body id="bootstrap-override-body">
+    <div class="container justify-content-md-center">
+      <div class="row hanging">
+        <ul class="nav justify-content-center">
+          <li>
+            <h5>
+              <i class="fas fa-id-card"></i>
+              <a class="nav-link font-highlight" href="index.html">ABOUT ME</a>
+            </h5>
+          </li>
+          <li>
+            <i class="fas fa-id-card"></i>
+            <h5>
+              <a class="nav-link font-highlight" href="projects.html"
+                >PROJECTS</a
+              >
+            </h5>
+          </li>
+          <li>
+            <i class="fas fa-id-card"></i>
+            <h5>
+              <a class="nav-link font-highlight" href="contact.html">CONTACT</a>
+            </h5>
+          </li>
+          <li>
+            <i class="fas fa-id-card"></i>
+            <h5>
+              <a class="nav-link font-highlight" href="secrets.html">SECRETS</a>
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div class="rowcontainer" id="bootstrap-override-container">
+        <div class="row px-3 py-3">
+          <div class="summary col-12">
+            <p>
+              I am a Master in Computer Scence actively looking for full time
+              jobs!
+            </p>
+          </div>
 
-        font-family: "Roboto", sans-serif;
-    }
-</style>
+          <div class="col-sm-6 col-12">
+            <ul class="content">
+              <li class="list-item item-title font-highlight">
+                Northeastern University
+              </li>
+              <li class="list-item">
+                <ul class="inner-list">
+                  <li>M.S. in Computer Science</li>
+                  <li class="font-content">Seattle, WA</li>
+                  <li class="font-content">Expected Dec. 2021</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-<body class="w3-light-grey">
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-            <!-- Left Column -->
-            <div class="w3-left">
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="profile.jpg" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-teal">
-                            <h2>Minghao Shan</h2>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p>
-                            <i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-teal"></i>Junior in Truman State University</p>
-                        <p>
-                            <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kirksville, MO</p>
-                        <p>
-                            <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>minghao8shan@gmail.com</p>
-                        <p>
-                            <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>660-525-3759</p>
-                        <hr>
-
-                        <p class="w3-large">
-                            <b>
-                                <i class="fa fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
-                        </p>
-                        <ul class="w3-ul">
-                            <li>Java</li>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>MySQL</li>
-                        </ul>
-                        <!-- <p>Adobe Photoshop</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                        </div> -->
-                        <br>
-
-                        <p class="w3-large w3-text-theme">
-                            <b>
-                                <i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Education</b>
-                        </p>
-                        <ul class="w3-ul">
-                            <li>
-                                <b>Truman State University</b>
-                            </li>
-                            <li>2015 Fall - 2018 Spring</li>
-                            <li>GPA: 3.44</li>
-                        </ul>
-                        <!-- <p>English</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-                        </div> -->
-                        <br>
-                    </div>
-                </div>
-                <br>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-right">
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>Java Tutor & Grader / Truman State Univeristy</b>
-                        </h5>
-                        <h6 class="w3-text-teal">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 -
-                            <span class="w3-tag w3-teal w3-round">Current</span>
-                        </h6>
-                        <p>Communicate with more than 40 students regards core Java knowledges.</p>
-                        <p>Grade more than 40 students' homework and give feedbacks.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>Java Software Engineering / Shaviation Technology</b>
-                        </h5>
-                        <h6 class="w3-text-teal">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2016 - Aug 2016</h6>
-                        <p>Implemented a JSP page where a user uploads Excel files and parse its data into MySQL database from
-                            a JSP page.
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Project</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>
-                                <a href="https://github.com/minghaoshan/-1s" target="_blank">Spotify Clone</a>
-                            </b>
-                        </h5>
-                        <h6 class="w3-text-teal">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Currently devloping</h6>
-                        <p>Developing a Web app where user can Sign up, Search for their favourite artist, alublums and customize lists.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>
-                                <a href="https://github.com/minghaoshan/TravelSafe" target="_blank">Travel Safe</a>
-                            </b>
-                        </h5>
-                        <h6 class="w3-text-teal">
-                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Hack ISU 2017 Fall</h6>
-                        <p>Developed an Android app that tracks user's location and automatically alerts their contact if the
-                            user is in danger.
-                        </p>
-                        <hr>
-                    </div>
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
+          <div class="col-sm-6 col-12">
+            <ul class="content">
+              <li class="list-item item-title font-highlight">
+                Truman State University
+              </li>
+              <li class="list-item">
+                <ul class="inner-list">
+                  <li>B.S. in Computer Science, Minor in Mathmatics</li>
+                  <li class="font-content">Kirksville, MO</li>
+                  <li class="font-content">Graduated May. 2015</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- End Page Container -->
+      </div>
     </div>
-
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <div style="padding: 10px;">
-            <span>
-                <i class="fa fa-file-text w3-large w3-hover-opacity">
-                    <a href="resume.pdf" target="_blank">Resume</a>
-                </i>
-            </span>
-            <span>
-                <i class="fa fa-github w3-large w3-hover-opacity">
-                    <a href="https://github.com/minghaoshan" target="_blank">Github</a>
-                </i>
-            </span>
-            <span>
-                <i class="fa fa-linkedin w3-large w3-hover-opacity">
-                    <a href="https://www.linkedin.com/in/minghaoshan/" target="_blank">LinkedIn</a>
-                </i>
-            </span>
-        </div>
-    </footer>
-
-</body>
-
+  </body>
 </html>

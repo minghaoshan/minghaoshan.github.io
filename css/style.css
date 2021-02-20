@@ -1,0 +1,74 @@
+@media screen and (max-width: 400px) {
+	.hanging {
+    letter-spacing: 0.1em;
+  }
+}
+ 
+@media screen and (min-width: 400px) and (max-width: 800px) {
+	.hanging {
+    letter-spacing: 0.2em;
+  }
+}
+ 
+@media screen and (min-width: 800px) {
+	.hanging {
+    letter-spacing: 0.3em;
+  }
+}
+
+#bootstrap-override-body {
+  background-color: rgb(44, 48, 81);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+#bootstrap-override-container {
+  background-color: rgb(54, 59, 95);
+}
+#bootstrap-override-nav {
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  height: 1000 px;
+}
+
+.navbar-custom {
+  background-color: rgb(44, 48, 81);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+
+.hanging {
+  letter-spacing: 0.2em;
+}
+.content {
+  border: 1px solid rgb(44, 48, 81);
+  padding: 0px;
+}
+.list-item {
+  display: block;
+  list-style-type: none;
+}
+.item-title {
+  background-color: rgb(44, 48, 81);
+  padding: 10px;
+  text-align: center;
+}
+
+.font-normal {
+  color: white;
+}
+.font-highlight {
+  color: #00f7ef;
+  font-weight: 900;
+}
+.font-content {
+  color: #a8a8a8;
+}
