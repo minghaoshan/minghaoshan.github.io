@@ -59,7 +59,10 @@
 .item-title {
   background-color: rgb(44, 48, 81);
   padding: 10px;
+}
+.contact-list {
   text-align: center;
+  list-style-type: none ;
 }
 
 .font-normal {
@@ -71,4 +74,10 @@
 }
 .font-content {
   color: #a8a8a8;
+}
+.mid-pic {
+  width: 400px;
+}
+.align-center {
+  text-align: center;
 }
