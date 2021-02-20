@@ -72,6 +72,10 @@
   color: #00f7ef;
   font-weight: 900;
 }
+.font-darkblue {
+  color: #0269a4;
+  font-weight: 900;
+}
 .font-content {
   color: #a8a8a8;
 }
@@ -80,4 +84,11 @@
 }
 .align-center {
   text-align: center;
+}
+.nav-link:hover {
+  color: #0269a4;
+  font-weight: 900;
+}
+.nav-link:first-letter {
+  font-size: 130%;
 }
